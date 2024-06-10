@@ -1,0 +1,8 @@
+Node3D
+EscQuit
+Camera3D
+SpringArm3D
+MeshInstance3D
+CollisionShape3D
+CharacterBody3D
+StaticBody3D
