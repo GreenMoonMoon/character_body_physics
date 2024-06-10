@@ -1,5 +1,3 @@
+res://character_body_tests/character_body_gym.tscn
 res://character_body_tests/character.tscn
 res://character_body_tests/character_controls.gd
-res://character_body_tests/character_body_gym.tscn
-res://utils/esc_quit.gd
-res://character_body_tests/camera_controls.gd

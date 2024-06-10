@@ -1,6 +1,6 @@
 extends CharacterBody3D
 
-const SPEED = 5.0
+const SPEED = 10.0
 const JUMP_VELOCITY = 8.5
 const ORIENT_SPEED = 5.0
 const GRAVITY_MOD := 2.0
@@ -22,7 +22,7 @@ func _physics_process(delta):
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
 		
-		rotation.y = lerp_angle(rotation.y, atan2(-velocity.x,-velocity.z), delta * ORIENT_SPEED)
+		rotation.y = lerp_angle(rotation.y, atan2(velocity.x,velocity.z), delta * ORIENT_SPEED)
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
