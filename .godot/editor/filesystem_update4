@@ -1,3 +1,4 @@
 res://character_body_tests/character_body_gym.tscn
 res://character_body_tests/character.tscn
 res://character_body_tests/character_controls.gd
+res://character_body_tests/character_stats.gd

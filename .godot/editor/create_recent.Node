@@ -1,5 +1,9 @@
-StaticBody3D
+Label
+GridContainer
+VBoxContainer
+Control
 CollisionShape3D
+StaticBody3D
 MeshInstance3D
 Node
 Node3D

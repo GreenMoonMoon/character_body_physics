@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dyjag7v8o347t"]
+[gd_scene load_steps=8 format=3 uid="uid://dyjag7v8o347t"]
 
 [ext_resource type="Script" path="res://character_body_tests/character_controls.gd" id="1_df6gx"]
 [ext_resource type="Script" path="res://character_body_tests/camera_controls.gd" id="2_wymk7"]
+[ext_resource type="Script" path="res://character_body_tests/character_stats.gd" id="3_ij4ka"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_j08ai"]
 
@@ -35,3 +36,26 @@ script = ExtResource("2_wymk7")
 
 [node name="Camera3D" type="Camera3D" parent="SpringArm3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+
+[node name="Stats" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_ij4ka")
+
+[node name="GridContainer" type="GridContainer" parent="Stats"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 2
+
+[node name="Label" type="Label" parent="Stats/GridContainer"]
+layout_mode = 2
+text = "Character speed:"
+
+[node name="CharacterSpeed" type="Label" parent="Stats/GridContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "0.0"
+horizontal_alignment = 2
